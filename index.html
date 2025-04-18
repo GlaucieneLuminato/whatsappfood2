@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lanchonete da Isaura</title>
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,500&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <!--header-->
-    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <header class="fundo">
 
         <img 
-        src="./cardapio/hamb-1.png"
+        src="./assets/hamb-1.png"
         alt="Logo Lanchonete"
-        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"/>
+        class="logo"/>
 
-        <h1 class="text-4x1 mt-4 mb-2 font-bold text-white">
+        <h1 class="titulo">
                     Lanchonete da Isaura
         </h1>
 
-        <span class="text-white">
+        <span class="endereco">
               Estrada Cruz das Almas, 830 - RJ
         </span>
 
-        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
-             <sapn class="text-white font-medium">
+        <div id="date-span">
+             <span class="horario">
                 Seg. à Sex. de 8h00 ás 22h00
-             </sapn>
+             </span>
         </div>
 
-        <h2 class="text-2x1 md:text-3x1 font-bold text-center mt-9 mb-6">
+        <h2 class="menu">
               Conheça nosso Menu
         </h2>
     </header>
@@ -37,196 +41,232 @@
     <!--Menu-->
 
     <div id="menu">
-        <main class="grid grid-cls-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7x1 px-2 mb-16">
+        <main class="cardapio">
 
             <!--Produtos-->
-            <div class="flex gap-2">
+            <div class="flex">
                 <img
-                src="./cardapio/hamb-1.png"
+                src="./assets/hamb-1.png"
                 alt="Hamburguer Smach"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                class="Hamburguer" 
                 />
 
                 <div> <!--hamburguer 1-->
                 
-                    <p class="font-bold"> Hamburguer Smach</p>
-                    <p class="text-sm"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
+                    <p class="titulo-produto"> Hamburguer Smach</p>
+                    <p class="descricao-produto"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3"></div>
-                    <p class="font-bold text-lg">R$ 18.90</p>
-                    <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+                    <div class="valores"></div>
+                    <p class="preco">R$ 18.90</p>
+                    <button class="adicionar-hamburguer, add-to-card-btn"
                     data-name= "Hamburguer Smach"
                     data-price="18.90">
-                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                    <i class="fa-solid fa-cart-plus"></i>    
                     </button>
                 </div>
 
                 <div> <!--hamburguer 2-->
                     <img
-                src="./cardapio/hamb-2.png"
+                src="./assets/hamb-2.png"
                 alt="Hamburguer Duplo"
-                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                class="Hamburguer"
                 />
-                    <p class="font-bold"> Hamburguer Duplo</p>
-                    <p class="text-sm"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
-
-                    <div class="flex items-center gap-2 justify-between mt-3"></div>
-                    <p class="font-bold text-lg">R$ 32.90</p>
-                    <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+                    <p class="titulo-produto"> Hamburguer Duplo</p>
+                    <p class="decricao-produto"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
+                    <div class="valores"></div>
+                    <p class="preco">R$ 32.90</p>
+                    <button class="adicinar-hamburguer add-to-card-btn"
                     data-name= "Hamburguer Duplo"
                     data-price="32.90">
-                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                    <i class="fa-solid fa-cart-plus"></i>    
                     </button>
                 </div>
 
                 <div> <!--hamburguer 3-->
                     <img
-                    src="./cardapio/hamb-3.png"
+                    src="./assets/hamb-3.png"
                     alt="Hamburguer Salada"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    class="Hamburguer"
                     />
-                    <p class="font-bold"> Hamburguer Salada</p>
-                    <p class="text-sm"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
+                    <p class="titulo-produto"> Hamburguer Salada</p>
+                    <p class="descricao-produto"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3"></div>
-                    <p class="font-bold text-lg">R$ 35.90</p>
-                    <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+                    <div class="valores"></div>
+                    <p class="preco">R$ 35.90</p>
+                    <button class="adicionar-hamburguer add-to-card-btn"
                     data-name= "Hamburguer Salada"
                     data-price="35.90">
-                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                    <i class="fa-solid fa-cart-plus" </i>    
                     </button>
                 </div>
 
                 <div> <!--hamburguer 4-->
                     <img
-                    src="./cardapio/hamb-4.png"
+                    src="./assets/hamb-4.png"
                     alt="Cheese Burguer"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    class="Hamburguer"
                     />
-                    <p class="font-bold"> Cheese Burguer</p>
-                    <p class="text-sm"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
+                    <p class="titulo-produto"> Cheese Burguer</p>
+                    <p class="descricao-produto"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3"></div>
-                    <p class="font-bold text-lg">R$ 35.00</p>
-                    <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+                    <div class="valores"></div>
+                    <p class="preco">R$ 35.00</p>
+                    <button class="adicionar-hamburguer  add-to-card-btn"
                     data-name= "Cheese Burguer"
                     data-price="35.00">
-                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                    <i class="fa-solid fa-cart-plus"></i>    
                     </button>
                 </div>
 
                 <div> <!--hamburguer 5-->
                     <img
-                    src="./cardapio/hamb-5.png"
+                    src="./assets/hamb-5.png"
                     alt="Cheese Burguer"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    class="Hamburguer"
                     />
-                    <p class="font-bold"> Cheese Burguer</p>
-                    <p class="text-sm"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
+                    <p class="titulo-produto"> Cheese Burguer</p>
+                    <p class="descricao-produto"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3"></div>
-                    <p class="font-bold text-lg">R$ 35.00</p>
-                    <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+                    <div class="valores"></div>
+                    <p class="preco">R$ 35.00</p>
+                    <button class="adicionar-hamburguer add-to-card-btn"
                     data-name= "Cheese Burguer"
                     data-price="35.00">
-                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                    <i class="fa-solid fa-cart-plus"></i>    
                     </button>
                 </div>
 
                 <div> <!--hamburguer 6-->
                     <img
-                    src="./cardapio/hamb-6.png"
+                    src="./assets/hamb-6.png"
                     alt="Cheese Bacon"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    class="Hamburguer"
                     />
-                    <p class="font-bold"> Cheese Bacon</p>
-                    <p class="text-sm"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
+                    <p class="titulo-produto"> Cheese Bacon</p>
+                    <p class="descricao-produto"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3"></div>
-                    <p class="font-bold text-lg">R$ 35.00</p>
-                    <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+                    <div class="valores"></div>
+                    <p class="preco">R$ 35.00</p>
+                    <button class="adicionar-hamburguer, add-to-card-btn"
                     data-name= "Cheese Bacon"
                     data-price="35.00">
-                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                    <i class="fa-solid fa-cart-plus"></i>    
                     </button>
                 </div>
 
                 <div> <!--hamburguer 7-->
                     <img
-                    src="./cardapio/hamb-7.png"
+                    src="./assets/hamb-7.png"
                     alt="Cheese Picanha"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    class="Hamburguer"
                     />
-                    <p class="font-bold"> Cheese Picanha</p>
-                    <p class="text-sm"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
+                    <p class="titulo-produto"> Cheese Picanha</p>
+                    <p class="descricao-produto"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3"></div>
-                    <p class="font-bold text-lg">R$ 35.00</p>
-                    <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+                    <div class="valores"></div>
+                    <p class="preco">R$ 35.00</p>
+                    <button class="adicionar-hamburguer, add-to-card-btn"
                     data-name= "Cheese Picanha"
                     data-price="35.00">
-                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                    <i class="fa-solid fa-cart-plus"></i>    
                     </button>
                 </div>
 
                 <div> <!--hamburguer 8-->
                     <img
-                    src="./cardapio/hamb-8.png"
+                    src="./assets/hamb-8.png"
                     alt="Cheese Triplo"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    class="Hamburguer" 
                     />
-                    <p class="font-bold"> Cheese Triplo</p>
-                    <p class="text-sm"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
+                    <p class="titulo-produto"> Cheese Triplo</p>
+                    <p class="descricao-produto"> Pão levinho de fermentação natural da Trigau, burguer 160g, queijo prato e maionese da casa.</p>
 
-                    <div class="flex items-center gap-2 justify-between mt-3"></div>
-                    <p class="font-bold text-lg">R$ 35.00</p>
-                    <button class="bg-gray-900 px-5 rounded add-to-card-btn"
+                    <div class="valores"></div>
+                    <p class="preco">R$ 35.00</p>
+                    <button class="adicionar-hamburguer, add-to-card-btn"
                     data-name= "Cheese Triplo"
                     data-price="35.00">
-                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                    <i class="fa-solid fa-cart-plus"></i>    
                     </button>
                 </div>
 
-                <div class="mx-auto max-w-7x1 px-2 my-2">
-                    <h2 class="font-bold text-3x1">
-                        |Bebidas
+                <div class="bebidas">
+                    <h2>
+                        Bebidas
                     </h2>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap=10 mx-auto max-w-7x1 px-2 mb-16" id="menu">
+                <div id="menu">
                 </div>
 
-                <div class="flex gap-2 w-full">
+                <div class="menu-bebidas">
                     <img
-                    src="./cardapio/refri-1.png"
+                    src="./assets/refri-1.jpg"
                     alt="Coca lata"
-                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+                    class="refri"/>
 
-                    <div class="w-full">
-                        <p class="font-bold">Coca Lata</p>
-                        <div class="font-bold text-lg">R$6.00</div>
+                    <div class="sessao-bebidas">
+                        <p class="titulo-bebidas">Coca Lata</p>
+                    <div id="sessao-bebidas">
+                        <div class="preco-bebidas">R$6.00</div>
                         <button
-                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        class="add-to-cart-btn"
                         data-name="coca lata"
                         data-price="6.00"></button>
-                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                        <i class="fa-solid fa-cart-plus"></i>
                     </div>
 
-                    <div class="flex gap-2 w-full">
+                    <div class="menu-bebidas">
                         <img
-                        src="./cardapio/refri-2.png"
+                        src="./assets/refri-2.jpg"
                         alt="Coca lata"
-                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"/>
+                        class="refri"/>
     
-                        <div class="w-full">
-                            <p class="font-bold">Guanará</p>
-                            <div class="font-bold text-lg">R$6.00</div>
+                        <div class="sessao-bebidas">
+                            <p class="titulo-bebidas">Guanará</p>
+                            <div class="preco-bebidas">R$6.00</div>
                             <button
-                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            class="add-to-cart-btn"
                             data-name="Guanará"
                             data-price="6.00"></button>
-                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                            <i class="fa-solid fa-cart-plus"></i>
                         </div>
+
+
+                    <div class="menu-bebidas">
+                        <img
+                        src="./assets/refri-3.jpg"
+                        alt="Coca lata"
+                        class="refri"/>
+    
+                        <div class="sessao-bebidas">
+                            <p class="titulo-bebidas">Guanará</p>
+                            <div class="preco-bebidas">R$6.00</div>
+                            <button
+                            class="add-to-cart-btn"
+                            data-name="Guanará"
+                            data-price="6.00"></button>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+
+
+                    <div class="menu-bebidas">
+                        <img
+                        src="./assets/refri-4.jpg"
+                        alt="Coca lata"
+                        class="refri"/>
+    
+                        <div class="sessao-bebidas">
+                            <p class="titulo-bebidas">Guanará</p>
+                            <div class="preco-bebidas">R$6.00</div>
+                            <button
+                            class="add-to-cart-btn"
+                            data-name="Guanará"
+                            data-price="6.00"></button>
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+
+                    </div>
 
                 </div>
 
